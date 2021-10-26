@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(120deg, #e6c96d, #d38772);
+  color: #fff;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.4rem;
+}
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  outline: none;
+  background: #fff;
+}
+form button {
+  color: #d38772;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+form button:hover {
+  background: #d38772;
+  color: #fff;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+.todo-list {
+  list-style: none;
+  min-width: 25%;
+}
+.todo {
+  margin: 0.5rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-size: 1.1rem;
+  transition: all 0.5s ease-in-out;
+}
+.todo li {
+  flex: 1;
+}
+.newTodo {
+  padding: 0.5rem 0.8rem;
+}
+.check-button,
+.delete-button {
+  background: #ff6f47;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  cursor: pointer;
+}
+.delete-button:hover {
+  background: #b94525;
+}
+.check-button {
+  background: rgb(73, 204, 74);
+}
+.check-button:hover {
+  background: rgb(29, 131, 29);
+}
+
+.fa-check,
+.fa-trash-alt {
+  pointer-events: none;
+}
+.complete {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.fall {
+  transform: translateY(8rem) rotate(20deg);
+  opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 0.6rem;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 0.6rem;
+  pointer-events: none;
+}
